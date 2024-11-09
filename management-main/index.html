@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b1892bcb15.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FULL STACK DEVELOPER</p>
+                <h1>Hi, I'm <span>Jaisurya </span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>Enthusiastic and dedicated, I am a budding Full Stack Developer with a foundational understanding of HTML, CSS, JavaScript, Node.js, and Express.js. Eager to apply my skills in a professional setting, I have completed an online course to demonstrate my practical abilities. As a quick learner with a strong work ethic, I am excited to contribute to dynamic teams, absorb insights from experienced mentors, and embark on a fulfilling journey in software development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'worked-in')">Worked In</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="worked-in">
+                        <ul>
+                            <li><span>VS code</span><br>Developed a website</li>
+                            <li><span>Android Studio</span><br>App Development</li>
+                            <li><span>Mongodb</span><br>Database Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SSLC</span><br>JSMHS SCHOOL(2008-2020)</li>
+                            <li><span>HSC</span><br>JSMHS SCHOOL(2020-2022)</li>
+                            <li><span>CLG</span><br>Bannari Amman Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="Services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in web design, combining creativity with a user-centric approach to deliver visually appealing and intuitive digital experiences. Proficient in HTML, CSS, and JavaScript, I leverage my eye for design to create aesthetically pleasing websites that prioritize functionality and user engagement. With a keen understanding of responsive design principles, I ensure seamless experiences across various devices. My passion for staying abreast of design trends and commitment to crafting compelling, user-friendly interfaces define my approach to web design.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Passionate about crafting intuitive and visually appealing user experiences, I have a keen eye for UI/UX design. With a solid foundation in design principles and proficiency in tools like Adobe XD and Figma, I have successfully contributed to creating engaging interfaces that enhance user satisfaction. Through collaborative teamwork and a user-centric approach, I strive to blend creativity with functionality to deliver seamless and delightful digital experiences.
+                        ldkdkdkd </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        I specialize in app design, combining a keen eye for aesthetics with a user-centric approach. Leveraging my proficiency in UI/UX principles, I have successfully crafted visually appealing and intuitive interfaces that enhance the overall user experience. My work involves translating complex ideas into elegant, functional designs, ensuring seamless navigation and engagement. Passionate about staying abreast of design trends, I am committed to creating impactful and user-friendly applications that leave a lasting impression.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Home lister</h3>
+                        <p>
+                            I played a pivotal role in developing the Home Lister app, contributing to its conception and execution. Responsible for both front-end and back-end functionalities, I implemented features ensuring seamless property listing, user authentication, and interactive search capabilities. My work involved utilizing technologies such as React for the front end, Node.js and Express.js for the back end, and integrating a robust database system. Focused on delivering an optimal user experience, I prioritized responsive design and intuitive navigation throughout the app, resulting in a user-friendly platform for property management and exploration.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Online scales</h3>
+                        <p>I have hands-on experience in developing and optimizing online sales applications, where my focus lies in creating seamless and efficient e-commerce experiences. From designing intuitive user interfaces to implementing secure and scalable back-end systems, I have played a key role in enhancing the overall functionality and performance of online sales platforms. My work involves integrating payment gateways, streamlining checkout processes, and leveraging data analytics to improve user engagement and drive sales. Passionate about delivering robust solutions, I am dedicated to creating online sales apps that provide a satisfying and secure shopping experience for users.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Expenditure analyzer</h3>
+                        <p>I led the development of an Expenditure Analyzer app, where I meticulously designed and implemented features to empower users in managing their finances effectively. Leveraging my full-stack development skills, I created an intuitive interface for expense tracking, implemented robust backend functionalities for data analysis, and ensured seamless integration with diverse platforms. My work on this app showcases my commitment to delivering practical solutions, providing users with actionable insights into their spending habits through a user-friendly and secure application.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn2">Download Cv</a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(event, tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
